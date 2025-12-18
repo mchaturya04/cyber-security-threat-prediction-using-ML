@@ -11,42 +11,60 @@ Modern organizations face increasing cybersecurity risks due to sophisticated at
 **Dataset**
 
 **Dataset**: CICIDS2017 (Canadian Institute for Cybersecurity)
+
 **Data Type**: Network flow–based traffic records
+
 **Size**: ~2.8 million labeled records
+
 **Attack Types Covered:**
-DDoS (Hulk, LOIC)
-DoS (GoldenEye, Slowloris, SlowHTTPTest)
-PortScan (Nmap, Xmas)
-Brute-Force (SSH, FTP)
+DDoS (Hulk, LOIC),
+DoS (GoldenEye, Slowloris, SlowHTTPTest),
+PortScan (Nmap, Xmas),
+Brute-Force (SSH, FTP),
 BENIGN traffic
 
 **Tools & Technologies**
 
 **Programming Language**: Python
+
 **Libraries**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+
 **Environment:** Jupyter Notebook / Google Colab
+
 **Visualization**: Power BI, Matplotlib, Seaborn
 
 **Methodology**
 
 **1.Data Collection & Merging**
+
   Combined all eight CICIDS2017 CSV files into a unified dataset
+  
 **2.Data Preprocessing**
-  Removed missing and infinite values
-  Converted multiclass labels into binary classes (BENIGN vs ATTACK)
-  Standardized numerical features using Z-score normalization
+
+ .Removed missing and infinite values
+ 
+ .Converted multiclass labels into binary classes (BENIGN vs ATTACK)
+ 
+ .Standardized numerical features using Z-score normalization
+  
 **3.Exploratory Data Analysis (EDA)**
-  Feature distribution analysis
-  Outlier visualization using boxplots
-  Correlation analysis using heatmaps
+
+  .Feature distribution analysis
+  
+  .Outlier visualization using boxplots
+  
+  .Correlation analysis using heatmaps
+  
 **4.Model Development**
-  Logistic Regression
-  Gaussian Naive Bayes
+
+  Logistic Regression,
+  Gaussian Naive Bayes,
   Decision Tree Classifier
+  
 **5.Model Evaluation**
-  Accuracy
-  Precision, Recall, F1-Score
-  Confusion Matrix
+  Accuracy,
+  Precision, Recall, F1-Score,
+  Confusion Matrix,
   ROC-AUC
 
 **Results & Key Findings**
@@ -60,10 +78,15 @@ Naive Bayes demonstrated high recall for attack detection but suffered from low 
 These results demonstrate that even lightweight and interpretable machine learning models can effectively detect cybersecurity threats when supported by strong preprocessing pipelines.
 
 **Future Enhancements**
+
 Implement ensemble models (Random Forest, Gradient Boosting)
+
 Explore deep learning approaches
+
 Integrate real-time traffic ingestion
+
 Improve probability calibration and AUC performance
 
 **Author**
+
 Mittapally Chaturya
